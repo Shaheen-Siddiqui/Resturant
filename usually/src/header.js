@@ -1,8 +1,10 @@
 import React from 'react';
+import {Link} from  "react-router-dom";
+
 
 const Header=()=>{
-    return(
-        <>
+    return(<>
+
 <header className="header"> 
 <div className="Leftside_div">
 <img className="logo_img" src="https://www.bismillahrestaurant.com/wp-content/uploads/2020/07/Bismillah-Logo.png" />
@@ -12,7 +14,8 @@ const Header=()=>{
 <div className="Rightside_div">
 <div className="for_icons">
 
-<a href="MenuPage.js"><i className="fa fa-cutlery"></i></a>
+<Link to="MenuPage.js"><i className="fa fa-cutlery"></i></Link>
+
 
 <span className="menu_icons">Menu</span>
 <a href="#"><i className="fa fa-info-circle"></i></a>

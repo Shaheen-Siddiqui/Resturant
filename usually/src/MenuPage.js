@@ -4,17 +4,10 @@ import ReactDOM from 'react-dom';
 import Footer from './Footer';
 
 ReactDOM.render(
-    <React.StrictMode>
+   <>
+<Header />
 
-      <Header />
-      <Footer/>
-
-
-
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-
+</>)
 
 
 

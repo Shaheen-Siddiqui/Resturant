@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from  "react-router-dom";
-
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import MenuPage from './MenuPage';
 
 const Header=()=>{
     return(<>
@@ -14,13 +14,21 @@ const Header=()=>{
 <div className="Rightside_div">
 <div className="for_icons">
 
-<Link to="MenuPage.js"><i className="fa fa-cutlery"></i></Link>
 
+
+
+<Router>
+<Link to="/MenuPage"><i className="fa fa-cutlery"></i></Link>
+
+<Routes>
+<Route path="/MenuPage" component={<MenuPage />} />
+</Routes>
+</Router>
 
 <span className="menu_icons">Menu</span>
-<a href="#"><i className="fa fa-info-circle"></i></a>
+<i className="fa fa-info-circle"></i>
 <span className="menu_icons">About</span>
-<a href="#"><i className="fa fa-asterisk"></i></a>
+<i className="fa fa-asterisk"></i>
 <span className="menu_icons">Awards</span>
 </div>
 <div className="for_num">

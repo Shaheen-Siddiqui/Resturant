@@ -6,6 +6,7 @@
 body{
   background-color: rgb(102, 0, 26);}
 
+/* ********************************* HEADER COMPONENT STYLING *********************************** */
 .header{
   width: 853px;
   height: 130px;
@@ -169,6 +170,111 @@ opacity: 0.7;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 12px;
   padding-top: 25px;}
+
+
+/* "**************************************** MENU CETOGARYES PAGE STYLING***************************************" */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* body{
+  background-color:#61122f;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;  
+} */
+.Menu_Categories{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 7px;
+  color:whitesmoke;
+  text-align: center;
+}
+.Menu_pera{
+  color: white;
+  text-align: center;
+}
+.Lunch_menu{
+  height: 145px;
+  width: 175px;
+  background-color:blueviolet;
+  margin-top: 30px;
+  margin: 9px;
+}
+.lunch_span{
+  height: 25px;
+  width: 175px;
+  background-color:lightblue;
+  font-style: italic;
+  font-family: cursive;
+  text-align: center;
+}
+.container_of_LM{
+  height: 180px;
+  width: 50rem;
+  margin-top: 20px;
+  display: flex;  
+  
+}
+  .lunch_img{
+    height: 145px;
+    width: 175px;
+    border: 2px groove black;
+
+  }
+    .outer_container{
+      display: flex;
+    }
+/**************************************LUNCH MENUES PAGE STYLING ****************************************/
+.lunch_heading{
+  color:whitesmoke;
+  text-align: center;
+}
+.outer_lunchMenu{
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;  
+  border: 5px groove maroon;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+.one_Repper{
+  background-color: khaki;
+}
+.inner_lunchMenu_img{
+  height: 140px;
+  width: 180px;
+  margin: 10px;
+  border: 1px solid black;
+}
+.lunchMenu_span{
+  background-color: aqua;
+  margin-left: -37px;
+  margin-top: 10px;
+  height: 17px;
+  width: 50px;
+  
+}
+.pera-pe{
+  text-decoration:underline;  
+  text-align: center;
+}
+
+.lunchMenu_pera{
+  text-align: left;
+  margin-left: 10px;
+  font-style: italic;
+  font-size: 11.5px;
+}
+.inner_lunchMenu{
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 
 

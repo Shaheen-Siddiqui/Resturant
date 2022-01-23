@@ -15,16 +15,6 @@ const Header=()=>{
 <div className="for_icons">
 
 
-
-
-<Router>
-<Link to="/MenuPage"><i className="fa fa-cutlery"></i></Link>
-
-<Routes>
-<Route path="/MenuPage" component={<MenuPage />} />
-</Routes>
-</Router>
-
 <span className="menu_icons">Menu</span>
 <i className="fa fa-info-circle"></i>
 <span className="menu_icons">About</span>

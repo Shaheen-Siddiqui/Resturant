@@ -5,20 +5,27 @@ import Footer from './Footer';
 import MenuPage from './MenuPage';
 import LuncMenu from './LuncMenu';
 
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Switch
+} from "react-router-dom";
+import Home from './home';
+import SingleCategory from './single-category';
+
+
 function App(params) {
-return(
-  <>
-  <Header />
-  <img className="main_img" src="https://wallpaperaccess.com/full/3014609.jpg" />
-  <Dishes />
-  <Footer /> 
+ return (
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<LuncMenu/>} />
+    <Route path="home" element={<Home/>} />
 
-  {/* Saprate pages have to link these pages "MenuPage","LuncMenu" to home page*/}
-
-  {/* <MenuPage /> */}
-  {/* <LuncMenu /> */}
-
-  </>)
+    <Route path="single-category" element={<SingleCategory />} />
+  </Routes>
+</BrowserRouter>
+ )
 }
 export default App;
 

@@ -1,4 +1,7 @@
 import React from "react";
+import Footer from "./Footer";
+import Header from "./header";
+
 const lunchArray=[
     {itemImage:"http://www.spiceindiaonline.com/wp-content/uploads/Lunch-Dinner-Menu-7-%E2%80%93-South-Indian-Vegetarian-Lunch-Menu_-copy.jpg",
     itemName:"Veal with Mixed Vegetables",
@@ -38,6 +41,7 @@ const lunchArray=[
 const LunchMenu = () => {
   return (
     <>
+    <Header/>
       <h2 className="lunch_heading">Lunch Menu</h2>
       <p className="lunch_heading pera-pe">Lunch is not served until after 1pm.</p><br /><br />
       {lunchArray.map((props)=>(
@@ -58,7 +62,7 @@ const LunchMenu = () => {
 
     </div>
     ))}
-    
+    <Footer/>
     </>
   );
 };

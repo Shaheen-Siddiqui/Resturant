@@ -1,6 +1,12 @@
 import React from 'react';
 
-function Dishes() {
+function Dishes(props) {
+
+    function handleClick() {
+      
+      props.history.push('/billing-dashboard')
+
+    }
     let dishes = [
         {
             imgsrc:"https://m.economictimes.com/thumb/msid-70143550,width-1200,height-900,resizemode-4,imgsize-1479961/zomato-indias-initial-tweet-was-liked-by-over-19000-users-and-re-tweeted-nearly-4000-times-.jpg",
@@ -18,7 +24,7 @@ function Dishes() {
 return(
     <div className="menu__container">
             {dishes.map((dishe)=>(
-                <div className="down_div">
+                <div  className="down_div">
                 <div className="first_down_div">
 
                     <img 

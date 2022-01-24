@@ -35,9 +35,6 @@ const lunchArray=[
     
 ];
 
-
-
-
 const LunchMenu = () => {
   return (
     <>
